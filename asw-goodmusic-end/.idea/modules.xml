@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connessioni-api/asw-goodmusic.connessioni-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/connessioni-api/asw-goodmusic.connessioni-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/connessioni/asw-goodmusic.connessioni.main.iml" filepath="$PROJECT_DIR$/.idea/modules/connessioni/asw-goodmusic.connessioni.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recensioni-api/asw-goodmusic.recensioni-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recensioni-api/asw-goodmusic.recensioni-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recensioni-seguite/asw-goodmusic.recensioni-seguite.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recensioni-seguite/asw-goodmusic.recensioni-seguite.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recensioni/asw-goodmusic.recensioni.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recensioni/asw-goodmusic.recensioni.main.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,82 @@
+name: asw-goodmusic
+services:
+  consul:
+    image: docker.io/hashicorp/consul
+    ports:
+      - "8500:8500"
+    hostname: localhost
+    container_name: asw-consul
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    container_name: api-gateway
+    depends_on:
+    - "consul"
+
+  connessioni:
+    build: ./connessioni
+    #container_name: connessioni
+    depends_on:
+      - "consul"
+      - "connessioni-db"
+      - "kafka"
+
+  recensioni:
+    build: ./recensioni
+    #container_name: recensioni
+    depends_on:
+      - "consul"
+      - "recensioni-db"
+      - "kafka"
+
+  recensioni-seguite:
+    build: ./recensioni-seguite
+    #container_name: recensioni-seguite
+    depends_on:
+      - "consul"
+      - "recensioni_seguite-db"
+      - "kafka"
+
+  recensioni-db:
+    image: docker.io/postgres:latest
+    container_name: recensioni-db
+    #volumes:  - postgres_recensioni_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: recensioniDb
+
+
+
+  connessioni-db:
+    image: docker.io/postgres:latest
+    container_name: connessioni-db
+    #volumes:  - postgres_connessioni_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: connessioniDb
+
+
+
+  recensioni_seguite-db:
+    image: docker.io/postgres:latest
+    container_name: recensioni-seguite-db
+    #volumes:  - postgres_recensioni-seguite_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: recensioniSeguiteDb
+
+
+
+  kafka:
+    extends:
+      file: ./kafka/docker-compose.yml
+      service: kafka
+
+volumes:
+  kafka_data:
+    driver: local
