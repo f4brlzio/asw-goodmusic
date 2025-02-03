@@ -140,3 +140,9 @@ Si veda la descrizione del progetto sul sito web del corso di [Architettura dei 
 ## Utilizzo di Kafka con Docker e Kubernetes
 
 Ecco alcune [note sull'Utilizzo di Kafka con Docker e Kubernetes](kafka/).
+
+
+Contributors:
+ Questo progetto è sviluppato da:
+-[@f4brlzio](https://github.com/f4brlzio) - Fabrizio Egiddi
+-[@FrancescoForlini](https://github.com/FrancescoForlini) - Francesco Forlini
