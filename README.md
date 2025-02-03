@@ -144,5 +144,5 @@ Ecco alcune [note sull'Utilizzo di Kafka con Docker e Kubernetes](kafka/).
 
 Contributors:
  Questo progetto è sviluppato da:
--[@f4brlzio](https://github.com/f4brlzio) - Fabrizio Egiddi
--[@FrancescoForlini](https://github.com/FrancescoForlini) - Francesco Forlini
+* [f4brlzio](https://github.com/f4brlzio) - Fabrizio Egiddi
+* [FrancescoForlini](https://github.com/FrancescoForlini) - Francesco Forlini
